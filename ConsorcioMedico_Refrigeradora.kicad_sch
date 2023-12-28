@@ -1,0 +1,20 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid e86bbed0-5bdc-4982-8297-fb5cecea731c)
+
+  (paper "A3")
+
+  (title_block
+    (title "Control de un sistema de refrigeración")
+    (company "Eplimin S.A.C.")
+    (comment 1 "Cliente: Consorcio Médico")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
