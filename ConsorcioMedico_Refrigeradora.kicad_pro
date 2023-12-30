@@ -471,6 +471,22 @@
     [
       "e86bbed0-5bdc-4982-8297-fb5cecea731c",
       ""
+    ],
+    [
+      "80a96d94-2098-4e0a-a173-fbb6709c7b1a",
+      "Dig_Inputs"
+    ],
+    [
+      "48dbbeb3-fee2-4df0-b8cf-5311531aaa2d",
+      "Analog"
+    ],
+    [
+      "c9fbc585-c81f-4eae-8a08-17bdf2b456cc",
+      "Dig_Outputs"
+    ],
+    [
+      "590066ce-6f12-49e8-a82d-e96ef8b64d45",
+      "Relay"
     ]
   ],
   "text_variables": {}
