@@ -1342,7 +1342,7 @@
 
   (footprint "1-Resistor:R_0603_1608Metric" (layer "B.Cu")
     (tstamp 07eec6a4-14b7-4a5c-b470-ad3d7fff5cd7)
-    (at 94.4 88)
+    (at 93.8 88.1 -90)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -1351,15 +1351,15 @@
     (property "ki_keywords" "R res resistor")
     (path "/477dc52f-9bec-463e-82c2-c1a651b5e938")
     (attr smd)
-    (fp_text reference "R52" (at 0 1.43) (layer "B.SilkS")
+    (fp_text reference "R52" (at 0 1.43 90) (layer "B.SilkS")
         (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp a77f28e0-b711-4d04-9753-9bc7446676dc)
     )
-    (fp_text value "1k" (at 0 -1.43) (layer "B.Fab") hide
+    (fp_text value "1k" (at 0 -1.43 90) (layer "B.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 237d7234-8487-4d9b-a9bd-55fa900d01ea)
     )
-    (fp_text user "${REFERENCE}" (at 0 0) (layer "B.Fab") hide
+    (fp_text user "${REFERENCE}" (at 0 0 90) (layer "B.Fab") hide
         (effects (font (size 0.4 0.4) (thickness 0.06)) (justify mirror))
       (tstamp c46955fe-d0ae-4c11-ae15-777e2bbcb15b)
     )
@@ -1383,9 +1383,9 @@
       (stroke (width 0.1) (type solid)) (layer "B.Fab") (tstamp b084b8f4-9f33-40a9-ba4b-4cd6202abcfe))
     (fp_line (start 0.8 0.4125) (end 0.8 -0.4125)
       (stroke (width 0.1) (type solid)) (layer "B.Fab") (tstamp d625746b-7944-48ea-a715-c2b30fd86189))
-    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
+    (pad "1" smd roundrect (at -0.825 0 270) (size 0.8 0.95) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
       (net 2 "GND") (pintype "passive") (tstamp e687d1f6-18c5-4291-a826-1976e6136217))
-    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
+    (pad "2" smd roundrect (at 0.825 0 270) (size 0.8 0.95) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
       (net 126 "Net-(U8-~{ON}{slash}OFF)") (pintype "passive") (tstamp 663b57dd-3023-42f9-8ea8-33a906a58ce4))
     (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
       (offset (xyz 0 0 0))
@@ -1649,7 +1649,7 @@
 
   (footprint "1-Capacitor:C_0603_1608Metric" (layer "B.Cu")
     (tstamp 12ef9e69-7c77-4c61-99c3-11ad63fd1267)
-    (at 81.8 120.85 90)
+    (at 81.25 119.625 90)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -1865,7 +1865,7 @@
 
   (footprint "1-Capacitor:C_0603_1608Metric" (layer "B.Cu")
     (tstamp 1c3d12da-72c4-445d-bb71-b64e4e46cc39)
-    (at 80.7 111.45 -90)
+    (at 80.15 110.225 -90)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -1919,7 +1919,7 @@
 
   (footprint "Package_QFP:LQFP-64_10x10mm_P0.5mm" (layer "B.Cu")
     (tstamp 1ccdec38-f738-4253-83bd-dbbe3ab4f62e)
-    (at 67.15 118.025 180)
+    (at 66.6 116.8 180)
     (descr "LQFP, 64 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606_7606-6_7606-4.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "LQFP QFP")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -2251,7 +2251,7 @@
 
   (footprint "1-Capacitor:C_0603_1608Metric" (layer "B.Cu")
     (tstamp 1f30ed96-62e6-4853-bd66-038254036349)
-    (at 62 126.1 -90)
+    (at 61.45 124.875 -90)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -2359,7 +2359,7 @@
 
   (footprint "1-Led:LED_0805" (layer "B.Cu")
     (tstamp 222bdef7-3dd6-4001-8092-ed87cec12923)
-    (at 56.125 124.9 180)
+    (at 55.575 123.675 180)
     (descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "LED handsolder")
     (property "Sheetfile" "Dig_Outputs.kicad_sch")
@@ -2483,7 +2483,7 @@
 
   (footprint "1-Capacitor:C_0603_1608Metric" (layer "B.Cu")
     (tstamp 23c870e2-7543-4bb9-b758-faed2cee9f8f)
-    (at 75.7 124.9)
+    (at 75.15 123.675)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -2979,7 +2979,7 @@
 
   (footprint "1-Crystal-and-Oscillator:Crystal_SMD_3215-2P_32.768khz" (layer "B.Cu")
     (tstamp 2ab4f6a4-a4aa-4736-95ea-fb4a3e866323)
-    (at 78.5 113.05 90)
+    (at 77.95 111.825 90)
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
     (property "Sheetname" "")
     (property "ki_description" "Two pin crystal, small symbol")
@@ -3368,7 +3368,7 @@
 
   (footprint "1-Resistor:R_0603_1608Metric" (layer "B.Cu")
     (tstamp 3b291545-c7f2-4ba4-be6c-1fe79f920664)
-    (at 56 122.9 180)
+    (at 55.45 121.675 180)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "Dig_Outputs.kicad_sch")
@@ -3878,7 +3878,7 @@
 
   (footprint "1-Capacitor:C_0603_1608Metric" (layer "B.Cu")
     (tstamp 4d149188-53f5-4105-899e-4c9b99ddcc19)
-    (at 64.4 126.4 -90)
+    (at 63.85 125.175 -90)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -4795,7 +4795,7 @@
 
   (footprint "1-Battery:BatteryHolder_DS1092_04_B6P" (layer "B.Cu")
     (tstamp 6c5e7300-ce10-4554-ba85-837d36f8e044)
-    (at 26.675 116.3)
+    (at 26.9 118.4)
     (descr "DS1092-04-B6P-1")
     (tags "Hardware")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -5002,7 +5002,7 @@
 
   (footprint "1-Capacitor:C_0603_1608Metric" (layer "B.Cu")
     (tstamp 760b50e4-dff2-4c3b-9117-3296524347a1)
-    (at 71.5 127.1 -90)
+    (at 70.9 125.1 -90)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -5011,7 +5011,7 @@
     (property "ki_keywords" "cap capacitor")
     (path "/c11c25e4-bd8c-42b2-a78f-5dff099ec9e1")
     (attr smd)
-    (fp_text reference "C7" (at 0 1.43 -270) (layer "B.SilkS")
+    (fp_text reference "C7" (at -1.225 1.98 -270) (layer "B.SilkS")
         (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 99da0bcf-cfad-458a-a5ae-fd22d17474a0)
     )
@@ -5110,7 +5110,7 @@
 
   (footprint "1-Capacitor:C_0603_1608Metric" (layer "B.Cu")
     (tstamp 7684f280-6c35-4137-8240-fefb8b919897)
-    (at 80.7 114.45 90)
+    (at 80.15 113.225 90)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -5388,7 +5388,7 @@
 
   (footprint "1-Capacitor:C_0603_1608Metric" (layer "B.Cu")
     (tstamp 82f1bedc-2a86-4824-9ba6-e00d3cfb3b52)
-    (at 60.4 126.1 -90)
+    (at 59.85 124.875 -90)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -5496,7 +5496,7 @@
 
   (footprint "1-Capacitor:C_0603_1608Metric" (layer "B.Cu")
     (tstamp 8a7054c2-1ab4-4d09-85b6-8ab53a625a36)
-    (at 81.8 117.85 -90)
+    (at 81.25 116.625 -90)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -5716,7 +5716,7 @@
 
   (footprint "1-Capacitor:C_0603_1608Metric" (layer "B.Cu")
     (tstamp 8fdfda5f-21bc-4299-9613-d0e7ac761aa0)
-    (at 72.2 109.025 90)
+    (at 71.65 107.8 90)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -6289,7 +6289,7 @@
 
   (footprint "1-Capacitor:C_0603_1608Metric" (layer "B.Cu")
     (tstamp a55a59f6-8e78-4ab5-b23a-76925fbbe9d3)
-    (at 29.8 116.4 180)
+    (at 30.025 118.5 180)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -6723,7 +6723,7 @@
 
   (footprint "1-Capacitor:C_0603_1608Metric" (layer "B.Cu")
     (tstamp b8435ac5-47b8-456f-b746-3473c5f63648)
-    (at 74.01 109.05 90)
+    (at 73.46 107.825 90)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -7230,7 +7230,7 @@
 
   (footprint "1-Capacitor:C_0603_1608Metric" (layer "B.Cu")
     (tstamp c491f8d6-e373-4352-9c21-28f123fc1b18)
-    (at 58.825 112.2 180)
+    (at 58.275 110.975 180)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -7431,7 +7431,7 @@
 
   (footprint "1-Capacitor:C_0603_1608Metric" (layer "B.Cu")
     (tstamp cc8e2838-b74d-4e81-b5da-d7ef835a8c00)
-    (at 75.7 123.3)
+    (at 75.15 122.075)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -8727,7 +8727,7 @@
 
   (footprint "1-Capacitor:C_0603_1608Metric" (layer "B.Cu")
     (tstamp ee62845c-efe1-4ca3-a561-1f37f77abd5a)
-    (at 69.9 127.1 -90)
+    (at 69.3 125.1 -90)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -8736,7 +8736,7 @@
     (property "ki_keywords" "cap capacitor")
     (path "/a2a69aa6-bd03-44e2-b93a-6e14f1027868")
     (attr smd)
-    (fp_text reference "C6" (at 0 1.43 -270) (layer "B.SilkS")
+    (fp_text reference "C6" (at -1.225 1.98 -270) (layer "B.SilkS")
         (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 39e48d45-e612-47a6-8bf4-1b9cf8f33605)
     )
@@ -8781,7 +8781,7 @@
 
   (footprint "1-Resistor:R_0603_1608Metric" (layer "B.Cu")
     (tstamp efa20db6-08fb-4508-b8ea-51aa98530ef2)
-    (at 69.1 109 90)
+    (at 68.55 107.775 90)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -8835,7 +8835,7 @@
 
   (footprint "1-Crystal-and-Oscillator:Crystal_SMD_5032-2Pin_5.0x3.2mm" (layer "B.Cu")
     (tstamp f5f2188d-342a-4e12-931a-a41cf69fd34d)
-    (at 79.1 119.35 -90)
+    (at 78.55 118.125 -90)
     (descr "SMD Crystal SERIES SMD2520/2 http://www.icbase.com/File/PDF/HKC/HKC00061008.pdf, 5.0x3.2mm^2 package")
     (tags "SMD SMT crystal")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
@@ -8891,7 +8891,7 @@
 
   (footprint "1-Capacitor:C_0603_1608Metric" (layer "B.Cu")
     (tstamp f9c3d935-f4a6-4f43-827a-66961b1cb48c)
-    (at 58.825 113.8 180)
+    (at 58.275 112.575 180)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "ConsorcioMedico_Refrigeradora.kicad_sch")
