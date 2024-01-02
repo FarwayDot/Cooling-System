@@ -616,11 +616,11 @@
         )
       )
     )
-    (symbol "power:+5V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (symbol "power:+12V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Value" "+5V" (at 0 3.556 0)
+      (property "Value" "+12V" (at 0 3.556 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
@@ -632,10 +632,10 @@
       (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0)
+      (property "ki_description" "Power symbol creates a global label with name \"+12V\"" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "+5V_0_1"
+      (symbol "+12V_0_1"
         (polyline
           (pts
             (xy -0.762 1.27)
@@ -661,9 +661,9 @@
           (fill (type none))
         )
       )
-      (symbol "+5V_1_1"
+      (symbol "+12V_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+5V" (effects (font (size 1.27 1.27))))
+          (name "+12V" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -1100,19 +1100,19 @@
     (uuid fbbeb501-03ac-4c22-a917-d65f30ce007c)
   )
 
-  (text "Relay Ventilador del Evaporador" (at 22.86 25.4 0)
+  (text "Relay Evaporator Fan" (at 29.21 25.4 0)
     (effects (font (size 3 3) (thickness 0.6) bold) (justify left bottom))
     (uuid 04de2aac-3cfe-454b-9ffc-691de3f54131)
   )
-  (text "Relay Compressor + Condensador" (at 116.84 26.67 0)
+  (text "Relay Compressor + Condensador Fan" (at 116.84 26.67 0)
     (effects (font (size 3 3) (thickness 0.6) bold) (justify left bottom))
     (uuid 327efb54-419f-4faf-a11c-d6163ef4e82f)
   )
-  (text "Relay Resistencia" (at 139.7 101.6 0)
+  (text "Relay Heater Resistance" (at 128.27 101.6 0)
     (effects (font (size 3 3) (thickness 0.6) bold) (justify left bottom))
     (uuid 39347eda-a922-4b97-b473-411860cd963d)
   )
-  (text "Relay Luz" (at 46.99 101.6 0)
+  (text "Relay Light" (at 46.99 101.6 0)
     (effects (font (size 3 3) (thickness 0.6) bold) (justify left bottom))
     (uuid 5d6c7b14-e8e2-4f51-a4d5-17a77f1d13b1)
   )
@@ -1120,6 +1120,14 @@
     (at 218.44 48.26 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7cd4e952-2a50-413a-89bf-b932ec3ed4ef)
+  )
+  (text "Light: 220VAC 18W" (at 63.5 110.49 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 92ceab18-3a74-493c-a03e-0874a8fa9592)
+  )
+  (text "Fan:230VAC 0.35AAC = 80W\nCompress: 220VAC 533W" (at 165.1 34.29 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid bbfd8e98-45eb-4061-a330-58b0e0676397)
   )
 
   (global_label "Relay_Calefac" (shape input) (at 129.54 139.7 180) (fields_autoplaced)
@@ -1174,9 +1182,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "#PWR068") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "#PWR071") (unit 1)
         )
@@ -1216,11 +1221,36 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/80a96d94-2098-4e0a-a173-fbb6709c7b1a"
-          (reference "J17") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "J8") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+12V") (at 154.94 110.49 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 03da0ae7-d620-4476-970e-58f650977d76)
+    (property "Reference" "#PWR087" (at 154.94 114.3 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+12V" (at 154.94 106.68 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 154.94 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 154.94 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5ec88c1c-cb1b-42e0-95be-77bf0e943e75))
+    (instances
+      (project "ConsorcioMedico_Refrigeradora"
+        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
+          (reference "#PWR087") (unit 1)
+        )
+        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
+          (reference "#PWR065") (unit 1)
         )
       )
     )
@@ -1256,9 +1286,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "D4") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "D4") (unit 1)
         )
@@ -1289,9 +1316,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "#PWR064") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "#PWR064") (unit 1)
         )
@@ -1305,13 +1329,13 @@
     (property "Reference" "K2" (at 168.91 46.355 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "T9AS1D12-12" (at 168.91 48.895 0)
+    (property "Value" "AZ2150-1A-12DEF" (at 168.91 48.895 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "1-Relay:Relay_TE-Connectivity_SPST-NO_32.5x27.4x27.9mm" (at 158.75 46.99 0)
+    (property "Footprint" "1-Relay:Relay_Zettler_SPST-NO_31.8x26.9x19.1mm" (at 158.75 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.tme.com/Document/f5ff3a4d400a11a6130f9375843af7c0/t9a.pdf" (at 158.75 46.99 0)
+    (property "Datasheet" "https://www.tme.com/Document/605aebef04958ecf00981abeeda4bd81/AZ2150.pdf" (at 158.75 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1ae2f803-dc13-4aea-bb24-dff43398c49d))
@@ -1320,9 +1344,6 @@
     (pin "4" (uuid 8cf6e898-228b-4dfb-a9b3-acbfbaf9cff6))
     (instances
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "K2") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "K2") (unit 1)
         )
@@ -1333,7 +1354,7 @@
   (symbol (lib_id "1-Relay:Relay_HONGFA_SPST-NO_20.5x7x15.3mm") (at 57.15 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1d54bdbe-d903-4c2f-b45f-2b26d4671316)
-    (property "Reference" "K4" (at 67.31 121.285 0)
+    (property "Reference" "K3" (at 67.31 121.285 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "HF46F-G/012-HS1T" (at 67.31 123.825 0)
@@ -1351,11 +1372,36 @@
     (pin "4" (uuid c45cea43-02af-4738-81ce-a0901848b210))
     (instances
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "K4") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "K3") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+12V") (at 53.34 110.49 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 2894cd1e-e7b6-4f06-bbd8-0b9c7b33817d)
+    (property "Reference" "#PWR087" (at 53.34 114.3 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+12V" (at 53.34 106.68 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 53.34 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 53.34 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ddea9aa3-cdbb-4893-ad70-a8bc0166b906))
+    (instances
+      (project "ConsorcioMedico_Refrigeradora"
+        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
+          (reference "#PWR087") (unit 1)
+        )
+        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
+          (reference "#PWR059") (unit 1)
         )
       )
     )
@@ -1385,9 +1431,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "R34") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "R34") (unit 1)
         )
@@ -1419,9 +1462,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "R39") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "R40") (unit 1)
         )
@@ -1432,7 +1472,7 @@
   (symbol (lib_id "1-Relay:Relay_HONGFA_SPST-NO_20.5x7x15.3mm") (at 158.75 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 38011841-412b-46a8-b59b-8fea13b3020f)
-    (property "Reference" "K3" (at 168.91 121.285 0)
+    (property "Reference" "K4" (at 168.91 121.285 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "HF46F-G/012-HS1T" (at 168.91 123.825 0)
@@ -1450,9 +1490,6 @@
     (pin "4" (uuid cf1663c0-f3c6-4299-a4f7-6d5a50939c17))
     (instances
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "K3") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "K4") (unit 1)
         )
@@ -1490,9 +1527,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "D5") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "D6") (unit 1)
         )
@@ -1524,11 +1558,36 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "R40") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "R39") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+12V") (at 49.53 35.56 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 437ee4a7-b06f-4289-b4cd-f639f24cbb59)
+    (property "Reference" "#PWR087" (at 49.53 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+12V" (at 49.53 31.75 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 49.53 35.56 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 49.53 35.56 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f54844f8-e0cc-4d1a-aa41-87f7dcb17c28))
+    (instances
+      (project "ConsorcioMedico_Refrigeradora"
+        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
+          (reference "#PWR087") (unit 1)
+        )
+        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
+          (reference "#PWR090") (unit 1)
         )
       )
     )
@@ -1564,9 +1623,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "D10") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "D10") (unit 1)
         )
@@ -1597,9 +1653,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "#PWR067") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "#PWR068") (unit 1)
         )
@@ -1631,9 +1684,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "R37") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "R37") (unit 1)
         )
@@ -1665,44 +1715,8 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "R41") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "R41") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 53.34 110.49 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 58ff3c2c-4d98-414b-9ed7-678f8e52c39d)
-    (property "Reference" "#PWR032" (at 53.34 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 53.34 106.68 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 53.34 110.49 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 53.34 110.49 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8c73b8f8-edd0-459a-bca4-4c11e8856309))
-    (instances
-      (project "Medidor_Digital_Doble_FUENTE"
-        (path "/8e70c5e3-3732-4510-8ad0-257ddae3b0dc"
-          (reference "#PWR032") (unit 1)
-        )
-      )
-      (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "#PWR065") (unit 1)
-        )
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
-          (reference "#PWR065") (unit 1)
         )
       )
     )
@@ -1738,9 +1752,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "D6") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "D5") (unit 1)
         )
@@ -1780,9 +1791,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/80a96d94-2098-4e0a-a173-fbb6709c7b1a"
-          (reference "J17") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "J19") (unit 1)
         )
@@ -1815,9 +1823,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "Q5") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "Q5") (unit 1)
         )
@@ -1850,44 +1855,8 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "Q7") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "Q6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 154.94 35.56 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 8f3f8863-6a81-44f9-8db9-0f493ba185cb)
-    (property "Reference" "#PWR028" (at 154.94 39.37 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 154.94 31.75 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 154.94 35.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 154.94 35.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4b0c4c5c-c7fe-4f81-936e-e189722ce7ef))
-    (instances
-      (project "Medidor_Digital_Doble_FUENTE"
-        (path "/8e70c5e3-3732-4510-8ad0-257ddae3b0dc"
-          (reference "#PWR028") (unit 1)
-        )
-      )
-      (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "#PWR059") (unit 1)
-        )
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
-          (reference "#PWR060") (unit 1)
         )
       )
     )
@@ -1917,9 +1886,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "R32") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "R32") (unit 1)
         )
@@ -1952,9 +1918,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "Q8") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "Q8") (unit 1)
         )
@@ -1994,9 +1957,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/80a96d94-2098-4e0a-a173-fbb6709c7b1a"
-          (reference "J17") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "J10") (unit 1)
         )
@@ -2027,9 +1987,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "#PWR062") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "#PWR062") (unit 1)
         )
@@ -2069,9 +2026,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/80a96d94-2098-4e0a-a173-fbb6709c7b1a"
-          (reference "J17") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "J9") (unit 1)
         )
@@ -2102,9 +2056,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "#PWR072") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "#PWR072") (unit 1)
         )
@@ -2136,9 +2087,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "R31") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "R31") (unit 1)
         )
@@ -2169,9 +2117,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "#PWR063") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "#PWR063") (unit 1)
         )
@@ -2200,9 +2145,6 @@
     (pin "4" (uuid e27a13c0-d8dc-4568-b23c-94f7e92dcc24))
     (instances
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "K1") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "K1") (unit 1)
         )
@@ -2235,44 +2177,8 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "Q6") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "Q7") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 154.94 110.49 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid e146119d-27bc-41fe-84fe-c81db284f4e6)
-    (property "Reference" "#PWR032" (at 154.94 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 154.94 106.68 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 154.94 110.49 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 154.94 110.49 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f134399d-9a83-4633-8989-476e5a18514e))
-    (instances
-      (project "Medidor_Digital_Doble_FUENTE"
-        (path "/8e70c5e3-3732-4510-8ad0-257ddae3b0dc"
-          (reference "#PWR032") (unit 1)
-        )
-      )
-      (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "#PWR071") (unit 1)
-        )
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
-          (reference "#PWR067") (unit 1)
         )
       )
     )
@@ -2301,44 +2207,8 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "#PWR061") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "#PWR061") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 49.53 35.56 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid f13ff304-d73f-44e8-8abb-c20f40164fe4)
-    (property "Reference" "#PWR028" (at 49.53 39.37 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 49.53 31.75 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 49.53 35.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 49.53 35.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e5bef010-612b-415e-a5ee-58d7174b88f0))
-    (instances
-      (project "Medidor_Digital_Doble_FUENTE"
-        (path "/8e70c5e3-3732-4510-8ad0-257ddae3b0dc"
-          (reference "#PWR028") (unit 1)
-        )
-      )
-      (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "#PWR060") (unit 1)
-        )
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
-          (reference "#PWR059") (unit 1)
         )
       )
     )
@@ -2367,11 +2237,36 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "#PWR073") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "#PWR073") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+12V") (at 154.94 35.56 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f79597ad-f38c-429b-9b1f-4c1e45d55c85)
+    (property "Reference" "#PWR087" (at 154.94 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+12V" (at 154.94 31.75 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 154.94 35.56 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 154.94 35.56 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 347c310b-17d6-4eb6-9c8d-7cc3997acfe7))
+    (instances
+      (project "ConsorcioMedico_Refrigeradora"
+        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
+          (reference "#PWR087") (unit 1)
+        )
+        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
+          (reference "#PWR067") (unit 1)
         )
       )
     )
@@ -2401,9 +2296,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "R33") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
           (reference "R33") (unit 1)
         )
