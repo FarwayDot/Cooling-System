@@ -2399,7 +2399,7 @@
     (property "Reference" "R6" (at 60.96 56.515 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1000" (at 60.96 59.055 0)
+    (property "Value" "1k" (at 60.96 59.055 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "1-Resistor:R_0603_1608Metric" (at 56.642 57.15 90)

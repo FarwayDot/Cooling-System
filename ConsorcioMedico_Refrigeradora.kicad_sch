@@ -6264,7 +6264,7 @@
     (property "Reference" "RV1" (at 34.29 71.12 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "FNR6045S680" (at 41.91 80.01 90)
+    (property "Value" "RM10D561KD24E100" (at 30.48 87.63 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Varistor:RV_Disc_D12mm_W5.1mm_P7.5mm" (at 37.592 74.93 90)
