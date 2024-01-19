@@ -5619,7 +5619,7 @@
     (property "Reference" "J5" (at 461.01 209.55 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "USART" (at 461.01 212.09 90)
+    (property "Value" "I2C" (at 461.01 212.09 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "1-Pinhead:PinHeader_1x04_P2.54mm_Vertical" (at 459.74 214.63 0)
