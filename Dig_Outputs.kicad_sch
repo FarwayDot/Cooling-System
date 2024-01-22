@@ -2690,9 +2690,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
-          (reference "R34") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/c9fbc585-c81f-4eae-8a08-17bdf2b456cc"
           (reference "R57") (unit 1)
         )
@@ -3203,9 +3200,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
-          (reference "R32") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/c9fbc585-c81f-4eae-8a08-17bdf2b456cc"
           (reference "R56") (unit 1)
         )
@@ -3438,9 +3432,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c"
-          (reference "#PWR038") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/c9fbc585-c81f-4eae-8a08-17bdf2b456cc"
           (reference "#PWR088") (unit 1)
         )
@@ -3478,9 +3469,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
-          (reference "D5") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/c9fbc585-c81f-4eae-8a08-17bdf2b456cc"
           (reference "D2") (unit 1)
         )
@@ -3565,9 +3553,6 @@
         )
       )
       (project "ConsorcioMedico_Refrigeradora"
-        (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/590066ce-6f12-49e8-a82d-e96ef8b64d45"
-          (reference "Q6") (unit 1)
-        )
         (path "/e86bbed0-5bdc-4982-8297-fb5cecea731c/c9fbc585-c81f-4eae-8a08-17bdf2b456cc"
           (reference "Q11") (unit 1)
         )
